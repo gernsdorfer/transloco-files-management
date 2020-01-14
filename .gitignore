@@ -39,3 +39,4 @@ testem.log
 Thumbs.db
 
 /apps/transloco-files-management/src/assets/i18n/lazy-translations
+/apps/transloco-files-management/src/assets/i18n/module-b

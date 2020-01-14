@@ -19,6 +19,9 @@
     },
     "scoped-library": {
       "tags": []
+    },
+    "module-b": {
+      "tags": []
     }
   }
 }

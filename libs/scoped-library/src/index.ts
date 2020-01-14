@@ -1,1 +1,1 @@
-export * from './lib/scoped-library.module';
+export * from './lib/lazy-translations.module';

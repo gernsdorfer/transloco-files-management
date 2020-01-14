@@ -219,6 +219,37 @@
           "styleext": "scss"
         }
       }
+    },
+    "module-b": {
+      "projectType": "library",
+      "root": "libs/module-b",
+      "sourceRoot": "libs/module-b/src",
+      "prefix": "transloco-files-management",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/module-b/tsconfig.lib.json",
+              "libs/module-b/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/module-b/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/module-b/jest.config.js",
+            "tsConfig": "libs/module-b/tsconfig.spec.json",
+            "setupFile": "libs/module-b/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

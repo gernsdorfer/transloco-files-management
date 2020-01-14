@@ -27,7 +27,8 @@
       ],
       "@transloco-files-management/scoped-library": [
         "libs/scoped-library/src/index.ts"
-      ]
+      ],
+      "@transloco-files-management/module-b": ["libs/module-b/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
